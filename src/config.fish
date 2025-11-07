@@ -2,6 +2,12 @@ starship init fish | source
 zoxide init fish | source
 source ~/.asdf/asdf.fish
 
+# Cria o diretório de completions do fish, se ele não existir
+mkdir -p ~/.config/fish/completions
+
+# Cria o link simbólico para o arquivo de completions do asdf
+ln -s ~/.asdf/completions/asdf.fish ~/.config/fish/completions/asdf.fish
+
 alias cat bat
 alias cd z
 alias cp xcp
