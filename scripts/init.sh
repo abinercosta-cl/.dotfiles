@@ -6,7 +6,7 @@ sudo pacman -Syyu --noconfirm
 #install package to configs
 sudo pacman -S yay --noconfirm
 
-yay -S ttf-cascadia-code montserrat-font otf-san-francisco noto-fonts-emoji gtk-engine-murrine catppuccin-gtk-theme-mocha --noconfirm
+yay -S ttf-cascadia-code montserrat-font otf-san-francisco noto-fonts-emoji gtk-engine-murrine catppuccin-gtk-theme-mocha 
 
 # some useful configs
 
@@ -25,8 +25,11 @@ gsettings set org.gnome.desktop.interface gtk-theme 'Catppuccin-Mocha-Standard-S
 gsettings set org.gnome.desktop.wm.preferences theme 'Catppuccin-Mocha-Standard-Sapphire-Dark'
 
 
-# install essential
-sudo pacman -S base-devel net-tools git github-cli alacritty helix visual-studio-code-bin starship  --noconfirm
 
-# install asdf
+# install essential
+sudo pacman -S  github-cli alacritty helix starship 
+
+yay -S base-devel net-tools 
+
+yay -S visual-studio-code-bin
 
